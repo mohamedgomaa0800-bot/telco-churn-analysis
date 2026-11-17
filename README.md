@@ -1,27 +1,25 @@
 # Telco Customer Churn - Data Cleaning & EDA
 
-## Project Goal
+### Project Goal
 Understand why telecom customers churn using real customer data.
 
-## Dataset
+### Dataset
 - 7043 customers, 21 features
 - Source: IBM Telco Customer Churn
 
-## What I Did
-1. Cleaned TotalCharges (converted to numeric, fixed 11 missing values)
-2. Checked for duplicates and data types
-3. EDA on Churn vs:
-   - Tenure, MonthlyCharges, Contract type, Internet Service
-4. Handled class imbalance (26.5% churn rate)
+### What I Did
+- Cleaned `TotalCharges` (converted object to float64, fixed 11 missing values where tenure = 0)
+- Validation: Duplicates = 0, Nulls = 0, Spaces = 0
+- EDA on Churn vs: Tenure, MonthlyCharges, Contract type, Internet Service
+- Handled class imbalance (26.5% churn rate)
 
-## Key Findings
+### Key Findings
 - Month-to-month contracts have highest churn
 - Fiber optic users churn more
 - New customers (low tenure) churn more
 
-## Tools
+### Tools
 Python, Pandas, Matplotlib, Seaborn
 
-## Files
-- `project1.ipynb`: Full analysis
-  
+### Files
+- `project1.ipynb`: Full analysis + Validation
